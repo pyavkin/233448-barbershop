@@ -15,14 +15,15 @@
                   <li><a href="info.html">Информация</a></li>
                   <li><a href="news.html">Новости</a></li>
                   <li><a href="price.html">Прайс-лист</a></li>
-                  <li class="shop-active"><a href="shop.html">Магазин</a></li>
+                  <li class="shop-active">Магазин</li>
                   <li><a href="contacts.html">Контакты</a></li>
               </ul>
                <ul class="user-menu">
-                  <li class="user-login"><img src="img/login.svg" width="14" height="14" alt="Логотип Барбешоп">Вход</li>
+                   <li class="user-login"><a href="#"><img src="img/login.svg" width="14" height="14" alt="Вход">Вход</a></li>
               </ul>
           </nav>          
       </header>
+      
       <main class="contant">
           <h1 class="contant-title">Средства для ухода</h1>
           <ul class="breadcrumbs">
@@ -31,41 +32,42 @@
              <li class="breadcrumps-active">Средства для ухода</li>
           </ul>
           <section class="filters">
-             <form class="filter">
+             <h2 class="visually-hidden">Фильтр товаров</h2>
+             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                  <fieldset>
-                     <legend><h2>Производители:</h2></legend>
+                     <legend>Производители:</legend>
                       <ul>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="baxter-of-california" checked>Baxter of California
+                             <label><input class="visually-hidden filter-checkbox" type="checkbox" name="baxter-of-california" checked>Baxter of California</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="mr-natty"> Mr Natty
+                            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="mr-natty"> Mr Natty</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="suavecito" checked> Suavecito
+                            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="suavecito" checked> Suavecito</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="malin-goetz" > Malin+Goetz
+                            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="malin-goetz" > Malin+Goetz</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="murrays"> Murray’s
+                            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="murrays"> Murray’s</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-checkbox" type="checkbox" name="american-crew" checked> American Crew
+                            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="american-crew" checked> American Crew</label>
                          </li>
                       </ul>     
                  </fieldset>
                  <fieldset>
-                     <legend><h2>Группы товаров:</h2></legend>
+                     <legend>Группы товаров:</legend>
                       <ul>
                          <li class="filter-option">
-                            <input class="filter-radio" type="radio" name="product" value="shaving">Бритвенные принадлежности
+                             <label><input class="visually-hidden filter-radio" type="radio" name="product" value="shaving">Бритвенные принадлежности</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-radio" type="radio" name="product" value="hair-care" checked>Средства для ухода
+                            <label><input class="visually-hidden filter-radio" type="radio" name="product" value="hair-care" checked>Средства для ухода</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-radio" type="radio" name="product" value="accessories">Аксессуары
+                            <label><input class="visually-hidden filter-radio" type="radio" name="product" value="accessories">Аксессуары</label>
                          </li>
                       </ul>
                  </fieldset>
@@ -74,6 +76,7 @@
           </section>
           
           <section class="catalog">
+             <h2 class="visually-hidden">Список средств для ухода</h2>
              <ul class="catalog-list">
                  <li class="catalog-item">
                      <p class="catalog-item-image">
@@ -183,7 +186,7 @@
             </ul>
             <ul class="next-list">
                   <li class="next-list-item"><a href="#">1</a></li>
-                  <li class="next-list-item"><a>2</a></li>
+                  <li class="next-list-item next-list-item-active"><a>2</a></li>
                   <li class="next-list-item"><a href="#">3</a></li>
                   <li class="next-list-item"><a href="#">4</a></li>
             </ul>
